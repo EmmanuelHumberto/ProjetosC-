@@ -2,6 +2,33 @@
  #include<iostream>
  using namespace std;
 
+    void banerbv(){
+
+     cout << "\n";
+     std::cout << "▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒"<<std::endl;
+	 std::cout << "▒▒ Bem vindo! Ao nosso jogo da Adivinhacao!▒▒"<<std::endl;
+     std::cout << "▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒\n";
+     cout << "\n";
+
+    }
+
+    void banererrou(){
+
+     cout << "╔════════════════════════════════════════╗" << endl;
+     cout << "║ ❌ Errou!! Você deu um bicudo cegueiro!║" << endl;
+     cout << "╚════════════════════════════════════════╝" << endl;
+     cout << "\n";
+    }
+
+    void baneracertou(){
+
+         cout << "\n";
+         cout << "╔════════════════════════════════════════════╗" << endl;
+         cout << "║ ✅  Parabens!! Você deu um bicudo certeiro!║ " << endl;
+         cout << "╚════════════════════════════════════════════╝" << endl;
+
+    }
+
    
      int main() {
 
@@ -13,28 +40,19 @@
 
      double pontos = 1000.0;
 
-
-     cout << "\n";
-     std::cout << "*********************************************"<<std::endl;
-	 std::cout << "*  Bem vindo! Ao nosso jogo da Adivinhacao! *"<<std::endl;
-     std::cout << "*********************************************\n";
-     cout << "\n";
+    banerbv();
+     
 
      while (errou){
 
-         
+     tentativas++;   
     /*função cout, entrada e saida [std::] bilioteca padrão in/out.
      * função endl, para quebra de linha, pode ser usando também [\n] do C
      */
-
-     
-
-     tentativas++;
-     cout << "=======================================" << endl;
-     cout << "Tentativa " << tentativas << endl;
-     cout << "=======================================" << endl;
-
-
+        
+         cout << "⌚ Tentativa "<<tentativas << endl;
+         cout << "\n";
+       
 
      int bicudo;
      cout << "Qual é o seu bicudo?"<< endl;
@@ -50,45 +68,34 @@
 
      if(acertou){
 
-         cout << "\n";
-         cout << "===========================================" << endl;
-         cout << " ✅  Parabens!! Você deu um bicudo certeiro" << endl;
-         cout << "===========================================" << endl;
+         baneracertou();
          errou = false;
 
      }
      else if(maior){
 
-
-         cout << "======================================" << endl;
-         cout << "❌ Errou!! Você deu um bicudo cegueiro" << endl;
-         cout << "======================================" << endl;
-         cout << "\n";
-         cout << "Bicudo foi MAIOR que o Numero Secreto" << endl;
+         banererrou();
+         cout << "✍  Bicudo foi MAIOR que o Numero Secreto" << endl;
          cout << "\n";
      }
      else{
 
        
-         cout << "=======================================" << endl;
-         cout << "❌ Errou!! Você deu um bicudo cegueiro"  << endl;
-         cout << "=======================================" << endl;
-         cout << "\n";
-
-         cout << "Bicudo foi MENOR que o Numero Secreto" << endl;
+         banererrou();
+         cout << "✍  Bicudo foi MENOR que o Numero Secreto" << endl;
          cout << "\n";
 
      }
    	
      }
-
-     cout << "Fim do jogo!" << endl;  
-
-     cout << "_________________________________________________" << endl;  
-     cout << "Você acertou o numero sercreto em " << tentativas << " tentativas" << endl;
+     cout << "\n";
+     cout << "✞ Fim do jogo!" << endl;  
+     cout << "\n";
+     cout << "✌  Você acertou o numero sercreto em " << tentativas << " tentativas" << endl;
+     cout << "\n";
      cout.precision(2);
      cout << fixed;
-     cout << "_________________________________________________" << endl;
-     cout << "Sua pontuação foi de " << pontos << " pontos." << endl;
-     cout << "-------------------------------------------------" << endl;  
+     cout << "╔══════════════════════════════════════════════╗" << endl;
+     cout << "║☛ Sua pontuação foi de "<< pontos <<" pontos.        ║ "   << endl;
+     cout << "╚══════════════════════════════════════════════╝" << endl;  
      }
