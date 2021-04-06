@@ -5,9 +5,9 @@
     void banerbv(){
 
      cout << "\n";
-     std::cout << "▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒"<<std::endl;
-	 std::cout << "▒▒ Bem vindo! Ao nosso jogo da Adivinhacao!▒▒"<<std::endl;
-     std::cout << "▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒\n";
+     std::cout << "▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒"<<std::endl;
+	 std::cout << "▒▒ Bem vindo ao jogo da Adivinhacao!▒▒"<<std::endl;
+     std::cout << "▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒\n";
      cout << "\n";
 
     }
