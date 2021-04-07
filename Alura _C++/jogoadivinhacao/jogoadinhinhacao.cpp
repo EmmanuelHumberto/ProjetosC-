@@ -48,11 +48,11 @@ int main() {
      banerbv();
 
      cout << "Escolha um nível de dificuldade: " << endl << endl;
-     cout << "▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒" << endl;
-     cout << "▒ Fácil   ▒ (F) ▒\n";
-     cout << "▒ Médio   ▒ (M) ▒\n";
-     cout << "▒ Difícil ▒ (D) ▒\n";
-     cout << "▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒" << endl;
+     cout << "      ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒   " << endl;
+     cout << "       ▒ Fácil   ▒ (F) ▒\n";
+     cout << "       ▒ Médio   ▒ (M) ▒\n";
+     cout << "       ▒ Difícil ▒ (D) ▒\n";
+     cout << "     ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ " << endl;
 
      char dificuldade;
      cin >> dificuldade;
