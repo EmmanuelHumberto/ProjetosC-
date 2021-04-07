@@ -94,18 +94,27 @@ for(char letra : palavra_secreta){
 vector<string> le_arquivo(){
 
     ifstream arquivo;
-    arquivo.open("palavras_forca.txt");
-    int qte_palavras;
-    arquivo >> qte_palavras;
-    vector<string> palavras_do_arquivo;
+    arquivo.open("palavras1_forca.txt");
+
+    if(arquivo.is_open()){
+
+        int qte_palavras;
+        arquivo >> qte_palavras;
+        vector<string> palavras_do_arquivo;
 
 
-    for(int i = 0; i < qte_palavras; i++){
-        string palavra_lida;
-        arquivo >> palavra_lida;
-        palavras_do_arquivo.push_back(palavra_lida);
-     }
-     return palavras_do_arquivo;
+        for(int i = 0; i < qte_palavras; i++){
+            string palavra_lida;
+            arquivo >> palavra_lida;
+            palavras_do_arquivo.push_back(palavra_lida);
+         }
+        arquivo.close();
+        return palavras_do_arquivo;
+    }else{
+
+        cout << "Não foi possível econtar o banco de palavras" << endl;
+        exit(0);
+    }
  }
 
 void sorteia_palavra_secreta(){
