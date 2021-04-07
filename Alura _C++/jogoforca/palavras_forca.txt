@@ -5,18 +5,18 @@ PERU
 BUTAO
 JAPAO
 CHINA
-Argentina 
-Bahamas 
-Barbados
-Belize
-Bolívia
-Brasil 
-Chile 
-Colombia
-Guiana
-Guiana Francesa
-Haiti 
-Jamaica 
-México 
-Nicarágua 
-Paraguai 
+ARGENTINA
+BAHAMAS 
+BARBADOS
+BELIZE
+BOLIVIA
+BRASIL
+CHILE
+COLOMBIA
+GUIANA
+GUIANA FRANCESA
+HAITI 
+JAMAICA 
+MEXICO 
+NICARAGUA 
+PARAGUAI
