@@ -4,6 +4,8 @@
 #include<ctime>
 #include<map>
 #include<vector>
+#include<fstream>
+
 using namespace std;
 
 void cabecalho(){
@@ -85,7 +87,7 @@ for(char letra : PALAVRA_SECRETA){
 
     if(letra_existe(bicu)){
 
-        cout << "Voce Acertou! Deu um bicu correto"<< endl; 
+        cout << "Você Acertou! Deu um bicu correto"<< endl; 
 
     }else{
 
@@ -96,19 +98,39 @@ for(char letra : PALAVRA_SECRETA){
     cout << endl;
  }
 
+void le_arquivo(){
+
+    ifstream arquivo;
+    arquivo.open("palavras_forca.txt");
+
+    int qte_palavras;
+    arquivo >> qte_palavras;
+
+    cout << "O arquivo possui " << qte_palavras << "palavras." << endl;
+
+    for(int i = 0; i < qte_palavras; i++){
+        string palavra_lida;
+        arquivo >> palavra_lida;
+
+        cout << "na linha " << i << " : " << palavra_lida << endl;
+
+
+    }
+
+
+}
 
 int main(){
 
      cabecalho();
+
+     le_arquivo();  
 
      while (nao_acertou() && nao_inforcou()){
 
          bicos_errados();
          desenha_palavra();
          bicuda();
-
-
-        
      }
 
       cout << "Fim do jogo!" << endl;
@@ -116,6 +138,7 @@ int main(){
       if(nao_acertou()){
 
            cout << "Voce perdeu o jogo!" << endl;
+
       }else{
 
            cout << "Parabens! Você acertou a palavra secreta!" << endl;
