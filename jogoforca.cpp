@@ -30,7 +30,7 @@ int main() {
      palavra_secreta = sorteia_palavra_secreta();
 
      while(nao_acertou(palavra_secreta, bicudou) && bicudas_erradas.size() < 5) {
-         bicos_errados(bicudas_erradas);
+         forca::bicos_errados(bicudas_erradas);
          desenha_palavra(palavra_secreta, bicudou);
          bicuda(bicudou, bicudas_erradas);
      }

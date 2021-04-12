@@ -1,6 +1,8 @@
 #include<iostream>
 #include "bicos_errados.hpp"
 
+namespace forca{
+
 void bicos_errados(const std::vector<char>&bicudas_erradas) {
     std::cout << "                                 ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒" <<std::endl;
     std::cout << "                                 ▒ bicudos errados:▒" <<std::endl;
@@ -12,3 +14,5 @@ void bicos_errados(const std::vector<char>&bicudas_erradas) {
 
      std::cout << std::endl;
  }
+ 
+}
