@@ -1,3 +1,5 @@
 #include<string>
+#include "namespace.hpp"
 
-std::string sorteia_palavra_secreta();
+
+std::string forca::sorteia_palavra_secreta();

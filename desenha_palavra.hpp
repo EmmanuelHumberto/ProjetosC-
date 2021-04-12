@@ -1,4 +1,6 @@
 #include<map>
 #include<string>
+#include "namespace.hpp"
 
-void desenha_palavra(std::string& palavra_secreta, const std::map<char, bool>& bicudou);	
+
+void forca::desenha_palavra(const std::string& palavra_secreta, std::map<char, bool>& bicudou);

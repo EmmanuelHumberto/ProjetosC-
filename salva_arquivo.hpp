@@ -1,4 +1,6 @@
 #include<vector>
 #include<string>
+#include "namespace.hpp"
 
-void salva_arquivo( std::vector< std::string>& lista_palavra);
+
+void forca::salva_arquivo (const std::vector< std::string>& lista_palavra);

@@ -1,10 +1,11 @@
- 
- #include<iostream>
+#include<iostream>
+#include "namespace.hpp"
 
-  inline void cabecalho_bicuda(){
-    std::cout << std::endl;
-    std::cout << "╔══════════╗" << std::endl;
-    std::cout << "║Bicuda aí!║" << std::endl;
-    std::cout << "╚══════════╝" << std::endl;
-    std::cout << std::endl;
-  }
+
+inline void forca::cabecalho_bicuda(){
+					std::cout << std::endl;
+					std::cout << "╔══════════╗" << std::endl;
+					std::cout << "║Bicuda aí!║" << std::endl;
+					std::cout << "╚══════════╝" << std::endl;
+					std::cout << std::endl;
+ }

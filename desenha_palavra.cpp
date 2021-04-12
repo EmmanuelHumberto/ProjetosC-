@@ -1,14 +1,12 @@
 #include<iostream>
 #include "desenha_palavra.hpp"
 
-void desenha_palavra(std::string& palavra_secreta, const std::map<char, bool>& bicudou) {
-    for(char letra : palavra_secreta) {
-        if (bicudou.find(letra) == bicudou.end() || !bicudou.at(letra)) {
-				std::cout << "_ ";
-            }else{
-				
-				std::cout << letra << " ";
-            }
-        } 
-    std::cout << std::endl;
+void forca::desenha_palavra(const std::string& palavra_secreta, std::map<char, bool>& bicudou) {
+			for(char letra : palavra_secreta) {
+				if(bicudou[letra]) {
+						std::cout << letra << " ";}else{
+						
+						std::cout << "_ ";}} 
+						
+			std::cout << std::endl;
  }

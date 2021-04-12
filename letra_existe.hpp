@@ -1,3 +1,5 @@
 #include<string>
+#include "namespace.hpp"
 
-bool letra_existe(char bicu);
+
+bool forca::letra_existe (char bicu, const std::string& palavra_secreta);

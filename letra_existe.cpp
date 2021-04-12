@@ -1,15 +1,15 @@
 #include<iostream>
 #include<string>
 #include<cstdlib>
+#include "letra_existe.hpp"
 
-const std::string palavra_secreta;
+bool forca::letra_existe (char bicu, const std::string& palavra_secreta) { 
+	
+			//for iterado, 
+			for(char letra : palavra_secreta){
 
-bool letra_existe(char bicu) { 
-    //for iterado, 
-    for(char letra : palavra_secreta) {
-        if(bicu == letra){
-        return true;
-         }
-     }
-     return false;
+				if(bicu == letra){
+				return true;}}
+				
+			return false;
  }

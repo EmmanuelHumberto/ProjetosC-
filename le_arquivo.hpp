@@ -1,4 +1,6 @@
 #include<string>
 #include<vector>
+#include<iostream>
+#include "namespace.hpp"
 
-std::vector<std::string> le_arquivo();
+std::vector<std::string> forca::le_arquivo();

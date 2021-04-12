@@ -1,5 +1,6 @@
 #include<string>
 #include<map>
+#include "namespace.hpp"
 
-bool nao_acertou (std::string& palavra_secreta, const std::map<char, bool>& bicudou);
+bool forca::nao_acertou (const std::string& palavra_secreta, std::map<char, bool>& bicudou);
 

@@ -3,6 +3,8 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
+    <File Name="namespace.hpp"/>
+    <File Name="palavras_forca.txt"/>
     <File Name="add_nova_palavra.hpp"/>
     <File Name="cabecalho_bico_errado.hpp"/>
     <File Name="cabecalho_bicuda.hpp"/>

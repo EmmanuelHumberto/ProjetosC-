@@ -1,9 +1,10 @@
 #include<vector>
-#include"le_arquivo.hpp"
+#include "le_arquivo.hpp"
+#include "sorteia_palavra_secreta.hpp"
 
-std::string sorteia_palavra_secreta() {
+std::string forca::sorteia_palavra_secreta() {
 	
-	std::vector< std::string> palavra_sorteada  = le_arquivo();
+	std::vector< std::string> palavra_sorteada  = forca::le_arquivo();
 	
     srand(time(NULL));
     int indice_sorteado = rand() % palavra_sorteada.size();
