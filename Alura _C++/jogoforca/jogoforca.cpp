@@ -53,6 +53,7 @@ int main() {
 
      }else{
          cabecalho_ganhou();
+         cabecalho_add_palavra();
      }
  }
 
